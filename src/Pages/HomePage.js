@@ -12,14 +12,14 @@ const HomePage = () => {
     const isMobile = !screens.md;
     return (
         <div>
-            <div>
-                {imageJSONData.map((image) => (
-                    <div key={image.id}>
-                        <h2>{image.title}</h2>
-                        <img src={image.imagePath} alt={image.title} />
-                    </div>
-                ))}
-            </div>
+            {/*<div>*/}
+            {/*    {imageJSONData.map((image) => (*/}
+            {/*        <div key={image.id}>*/}
+            {/*            <h2>{image.title}</h2>*/}
+            {/*            <img src={image.imagePath} alt={image.title} />*/}
+            {/*        </div>*/}
+            {/*    ))}*/}
+            {/*</div>*/}
             <div>
                 <SearchBar />
                 <OfferZone data = {OfferZoneData} /><br/>
