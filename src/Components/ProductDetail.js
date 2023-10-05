@@ -1,35 +1,23 @@
 import React from 'react';
-import {cardData1, cardData2} from "../Assets/ProductsData";
-import {useParams} from "react-router-dom";
+import {useLocation} from "react-router-dom";
 import '../App.css'
-import AskQuery from "./AskQuery";
+import {useSelector} from "react-redux";
 const ProductDetail = () => {
-    const { cardSet, id } = useParams()
-    // const cardIndex = parseInt(id);
+    const selectedCard = useSelector((state) => state.selectedCard);
 
-    const cardData = cardSet === 'cardSet1' ? cardData1 : cardData2;
-
-    const card = cardData.find((card) => card.id === parseInt(id));
-    if (!card) {
-        return <div>Card not found</div>;
+    if (!selectedCard) {
+        // Handle the case where there's no selected card
+        return <div>No card selected</div>;
     }
 
+    // Render the details of the selected card here
     return (
-        <div className="product-details-container">
-            <div className="product-details-left" >
-                <img src={card.imageSrc} alt="CardImage" />
-                <h1>{card.title}</h1><br/>
-                <p>{card.description}</p>
-                <br/><br/>
-
-            </div>
-            <div className="v1"></div>
-            <div className="product-details-right" >
-                <h1>{card.title}</h1>
-                <p>{card.details}</p><br/>
-                <AskQuery title={card.title} description={card.description} />
-            </div>
-
+        <div>
+            <h1>Product Details</h1>
+            <p>Name: {selectedCard.name}</p>
+            <p>Description: {selectedCard.sDescp}</p>
+            <img src={selectedCard.filePath} alt={selectedCard.name} />
+            {/* Add more details as needed */}
         </div>
     );
 };

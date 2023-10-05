@@ -1,12 +1,17 @@
+
 [
-  {
-    "id": 1,
-    "title": "Image 1",
-    "imagePath": "/OFFER/offer2.jpeg"
-  },
-  {
-    "id": 2,
-    "title": "Image 2",
-    "imagePath": "/OFFER/offer2.jpeg"
-  }
-]
+    {
+      "offer": {
+        "basePath": "/OFFER/",
+        "count": 10,
+        "fileName": "offer",
+        "fileFormat": ".jpeg"
+
+        },
+      "banner": {
+        "basePath": "/BANNER/",
+        "count": 10
+      }
+    }
+  ]
+

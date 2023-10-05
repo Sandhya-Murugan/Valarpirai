@@ -1,17 +1,20 @@
 import React, {useRef} from 'react';
-import {Card, Col, Carousel, Button} from 'antd';
+import {Card, Col, Carousel, Alert} from 'antd';
 import {Link} from "react-router-dom";
 import AskQuery from "./AskQuery";
 import "../App.css"
 import {LeftOutlined, RightOutlined} from "@ant-design/icons";
-import {cardData1} from "../Assets/ProductsData";
+import {useDispatch} from "react-redux";
+import { selectCard } from '../action';
 
 const { Meta } = Card;
 
 
 
-const MyCards = ({cardData, cardSet}) => {
+const MyCards = ({jsonData}) => {
 
+    console.log("productListPage")
+    console.log(jsonData)
     const responsiveSettings = [
         {
             breakpoint:400, // Define your mobile breakpoint here (e.g., 768px)
@@ -52,13 +55,24 @@ const MyCards = ({cardData, cardSet}) => {
         }
     };
 
+
+    const dispatch = useDispatch();
+    const handleCardClick = (card) => {
+        dispatch(selectCard(card));
+        // You can also navigate to the ProductDetails page programmatically here
+    }
+
     return (
         <div>
             <Carousel  responsive={responsiveSettings} dotPosition="none" ref={carouselRef}>
-                {cardData.map((card,id) => (
+                {jsonData.map((card,id) => (
+
                     <Col key={id} xs={23} sm={20} md={20} lg={20}>
-                        <Link to={`/productDetails/${cardSet}/${id}`}>
+                        <Link  to={`/productDetails`}
+                        >
+
                             <Card
+                                onClick={() => handleCardClick(card)}
                                 hoverable
                                 style={{ minHeight: '300px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}
                                 cover={
@@ -67,31 +81,32 @@ const MyCards = ({cardData, cardSet}) => {
                                         height: '100%',
                                         width: '100%',
                                         aspectRatio: `${imageAspectRatio}`,
-                                    }} alt={card.title} src={card.imageSrc} />
+                                    }} alt={card.name} src={card.filePath} />
                                 }
                             >
 
                                 <div style={{ padding: '10px', display: 'flex', justifyContent: 'center' }}>
                                     <div>
-                                        <Meta title={card.title} description={card.description} />
+                                        <Meta title={card.name} description={card.sDescp} />
                                     </div>
                                     <div style={{ position: 'absolute', top: '10px', right: '10px' }}>
-                                        <AskQuery title={card.title} description={card.description} />
+                                        <AskQuery title={card.title} description={card.sDescp} />
                                     </div>
                                 </div>
                             </Card>
+                        {/*<Alert message={card}></Alert>*/}
                         </Link>
                     </Col>
                 ))}
             </Carousel>
-            <div className="carousel-nav">
-                <LeftOutlined className="prev-button" onClick={handlePrev}>
-                    Previous
-                </LeftOutlined>
-                <RightOutlined className="next-button" onClick={handleNext}>
-                    Next
-                </RightOutlined>
+            <div className="carousel-buttons">
+                <LeftOutlined className="prev-button" onClick={handlePrev} />
+
+                <RightOutlined className="next-button" onClick={handleNext}/>
+
+
             </div>
+
 
         </div>
 

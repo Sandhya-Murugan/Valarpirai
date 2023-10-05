@@ -1,7 +1,9 @@
 .App{
   margin: auto;
 }
-
+body{
+  margin: auto;
+}
 /* Products Details Page */
 .product-details-container {
   display: flex;
@@ -27,33 +29,31 @@
 
 
 /* Previous and next button on products list page */
-.carousel-nav {
+.carousel-buttons {
+
+  position: absolute;
+  left: 3%;
+  right: 3%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  /*margin-top: 10px; !* Adjust the margin as needed *!*/
+  /*top: 50%; !* Set the top property to 50% *!*/
+  transform: translateY(-50%);
+  color: black;
 }
 
 .prev-button,
 .next-button {
-  background-color: #007bff; /* Button background color */
-  color: white; /* Button text color */
+  background-color: #007bff;
+  color: white;
   border: none;
-  padding: 8px 16px; /* Adjust padding as needed */
   cursor: pointer;
-  border-radius: 4px; /* Add rounded corners if desired */
-  /*margin-bottom: 10%;*/
-
+  border-radius: 4px;
+  font-size: 25px;
 }
 
 .prev-button:hover,
 .next-button:hover {
-  background-color: #0056b3; /* Hover background color */
-}
-
-.prev-button {
-  margin-right: 10px; /* Spacing between buttons */
-  margin-top: 0;
+  color: #000000;
 }
 /*----------------------------------------------------------------------------------------*/
 
