@@ -1,7 +1,7 @@
 [
 
   {
-    "name": "table",
+    "name": "Wood Study Table",
     "actualPrice": 2000,
     "discountedPercent": 25,
     "sDescp": "Smartsters Engineered Wood Study Table with Storage for Kids | with Drawer, Cabinet and Shelves",
@@ -11,7 +11,7 @@
     "relatedImagesPath": ["1","2","3"]
   },
   {
-    "name": "p2",
+    "name": "Engineered Wood Study Table (Walnut Finish)",
     "actualPrice": 200,
     "discountedPercent": 20,
     "sDescp": " Solimo Triumph Engineered Wood Study Table (Walnut Finish)",
@@ -20,7 +20,7 @@
     "relatedImagesPath": ["1","2","3"]
 
   },
-  { "name": "p3",
+  { "name": "PAZANO Table",
     "actualPrice": 200,
     "discountedPercent": 20,
     "sDescp": "PAZANO Table Study Computer Office Table for Adults 【L90xW60cm】",
@@ -31,7 +31,7 @@
 
 
   {
-    "name": "p4",
+    "name": "Priti 2 Tier Coffee Table",
     "actualPrice": 200,
     "discountedPercent": 20,
     "sDescp": "Priti 2 Tier Coffee Table with Small Round Table Like MDF Modern, Double MDF Desk, Balcony Coffee Table",
@@ -40,7 +40,7 @@
     "relatedImagesPath": ["1","2","3"]
   },
   {
-    "name": "p5",
+    "name": "TRENDY VIBES Wooden Study",
     "actualPrice": 200,
     "discountedPercent": 20,
     "sDescp": "TRENDY VIBES Wooden Study & Computer Table and Office Desk (Colur -Brown)",
@@ -50,7 +50,7 @@
 
   },
   {
-    "name": "p6",
+    "name": "Computer Table and Office Desk",
     "actualPrice": 200,
     "discountedPercent": 20,
     "sDescp": "TRENDY VIBES Wooden Study & Computer Table and Office Desk (Colur -Brown)",
