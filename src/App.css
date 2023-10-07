@@ -3,6 +3,7 @@
 }
 body{
   margin: auto;
+  background-color: #eeeeee;
 }
 /* Products Details Page */
 .product-details-container {
@@ -30,7 +31,6 @@ body{
 
 /* Previous and next button on products list page */
 .carousel-buttons {
-
   position: absolute;
   left: 3%;
   right: 3%;
@@ -43,17 +43,21 @@ body{
 
 .prev-button,
 .next-button {
-  background-color: #007bff;
-  color: white;
+  background-color: #f6f6f8;
+  padding: 1%;
+  color: #7e7c7c;
   border: none;
   cursor: pointer;
   border-radius: 4px;
-  font-size: 25px;
+  font-size: 20px;
+  height:20px;
+  font-weight: bolder;
+  margin-bottom:37%;
 }
 
 .prev-button:hover,
 .next-button:hover {
-  color: #000000;
+  color: #0e0e0e;
 }
 /*----------------------------------------------------------------------------------------*/
 
@@ -78,4 +82,36 @@ body{
     color: white;
     margin-right: 10px;
   }
+}
+
+.Actual_Price{
+  text-decoration: line-through;
+  margin-left: 10px;
+}
+.Discounted_Price{
+  color: black;
+  font-style: italic;
+  font-size: 20px;
+}
+.Discounted_Percent{
+  color: red;
+  font-size: 20px;
+  margin-right: 10%
+}
+.ellipsis-description {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.card-content {
+  height: 100px; /* Adjust the height as needed */
+  overflow: hidden;
+}
+
+.horizontal-line {
+  height: 1px; /* Set the height of the line */
+  width: 100%; /* Make the line full width */
+  background: linear-gradient(to right, #ffffff 30%, #f3f0f0 50%, #ffffff 70%); /* Apply a gradient background */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); /* Add a shadow for 3D effect */
+  margin: 10px 0; /* Optional: Add margin for spacing */
 }

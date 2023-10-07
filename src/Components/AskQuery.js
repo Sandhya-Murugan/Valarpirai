@@ -1,26 +1,30 @@
 import React from 'react';
 import {WhatsAppOutlined} from "@ant-design/icons";
+import {Button} from "antd";
 
 
-const AskQuery = ({title, description}) => {
+const AskQuery = ({title, description, imagePath}) => {
     const phoneNumber = "7402413714";
     const handleWhatsAppShare = (description, title) => {
-        const whatsappMessage = `Check out this : ${title} \n\n ${description}`;
+        console.log(title, description)
+        const whatsappMessage = `Check out this :  ${title} \n\n ${description}`;
         const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`;
         window.open(whatsappLink, '_blank');
     };
     return (
         <div>
-            <WhatsAppOutlined
-                style={{color:"green", fontSize:"30px", transition: 'font-size 0.1s'}}
+            <Button
+                style={{color:"white", backgroundColor:"green"}}
                 onClick={() => handleWhatsAppShare(title, description)}
                 onMouseEnter={(e) => {
-                    e.target.style.fontSize = '40px'; // Increase font size on hover
+                    e.target.style.backgroundColor = 'blue'; // Increase font size on hover
                 }}
                 onMouseLeave={(e) => {
-                    e.target.style.fontSize = '30px'; // Reset font size on hover out
+                    e.target.style.backgroundColor = 'green'; // Reset font size on hover out
                 }}
-            />
+            >
+                Whatsapp <WhatsAppOutlined />
+            </Button>
         </div>
     );
 };

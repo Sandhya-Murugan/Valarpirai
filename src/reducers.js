@@ -1,14 +1,15 @@
 const initialState = {
-    selectedCard: null,
+    selectedProductCard: null,
 };
 
-export const cardReducer = (state = initialState, action) => {
+export const productReducer = (state = initialState, action) => {
     switch (action.type) {
-        case 'SELECT_CARD':
+        case 'SELECT_PRODUCT_CARD':
             return {
                 ...state,
-                selectedCard: action.payload,
+                selectedProductCard: action.payload,
             };
+
         default:
             return state;
     }

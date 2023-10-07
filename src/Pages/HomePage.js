@@ -6,13 +6,12 @@ import {Content, Header} from "antd/es/layout/layout";
 import SearchBar from "../Components/SearchBar";
 import OfferZone from "../Components/OfferZone";
 import {OfferZoneData} from "../Assets/OfferZoneData";
-import imageJSONData from "../data.json";
-
+import {Button, Card} from "antd";
+import {Link} from "react-router-dom";
 
 const HomePage = () => {
     const screens = useBreakpoint();
     const isMobile = !screens.md;
-
     return (
         <div>
             <div>

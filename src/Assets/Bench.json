@@ -1,0 +1,62 @@
+[
+
+  {
+    "name": "Wood 2 Seater Bench",
+    "actualPrice": 200,
+    "discountedPercent": 20,
+    "sDescp": "Ikiriya Solid Wood 2 Seater Bench Wooden Floral Print Green Kantha Upholestered Cushioned Couch Furniture for Home Living Room Dining Table",
+    "dDescp": "product product..........",
+    "filePath": "/Images/bench/bench_1/bench_1.jpeg",
+    "relatedImagesPath": ["1","2","3"]
+  },
+  {
+    "name": "Sitting Bench with Cushion",
+    "actualPrice": 200,
+    "discountedPercent": 20,
+    "sDescp": "TRUPOT A One Steels Sitting Bench with Cushion & Double Shoe Rack 32 Inch",
+    "dDescp": "product product..........",
+    "filePath": "/Images/bench/bench_2/bench_2.jpeg",
+    "relatedImagesPath": ["1","2","3"]
+
+  },
+  { "name": "Wood Seating Bench",
+    "actualPrice": 200,
+    "discountedPercent": 20,
+    "sDescp": "OGNIJA Solid Sheesham Wood Seating Bench with Armrest for Home Living Room Hall Wooden Furniture for Indoor",
+    "dDescp": "product product..........",
+    "filePath": "/Images/bench/bench_3/bench_3.jpeg",
+    "relatedImagesPath": ["1","2","3"]
+  },
+
+
+  {
+    "name": " Flat Gym Bench",
+    "actualPrice": 200,
+    "discountedPercent": 20,
+    "sDescp": "Krin Fitness Flat Gym Bench Home Workout Multipurpose Exercise Bench Press Weight Strength Training, Flat, Black",
+    "dDescp": "product product..........",
+    "filePath": "/Images/bench/bench_4/bench_4.jpeg",
+    "relatedImagesPath": ["1","2","3"]
+  },
+  {
+    "name": "Small Dining Bench",
+    "actualPrice": 200,
+    "discountedPercent": 20,
+    "sDescp": "Home Centre Diana Small Dining Bench - Walnut_Butterfly SB_Standard",
+    "dDescp": "product product..........",
+    "filePath": "/Images/bench/bench_5/bench_5.jpeg",
+    "relatedImagesPath": ["1","2","3"]
+
+  },
+  {
+    "name": "Small Dining Bench",
+    "actualPrice": 200,
+    "discountedPercent": 20,
+    "sDescp": "Home Centre Diana Small Dining Bench - Walnut_Butterfly SB_Standard",
+    "dDescp": "product product..........",
+    "filePath": "/Images/bench/bench_6/bench_6.jpeg",
+    "relatedImagesPath": ["1","2","3"]
+
+  }
+
+]

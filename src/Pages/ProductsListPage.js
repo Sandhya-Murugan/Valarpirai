@@ -1,15 +1,14 @@
-import ProductsList from "../Components/ProductsList";
-import {cardData1} from "../Assets/ProductsData";
-import {cardData2} from "../Assets/ProductsData";
-import SearchBar from "../Components/SearchBar";
 import React, { useEffect, useState } from 'react';
 import categories from "../Assets/Category.json";
-function ProductListPage() {
-    const [jsonDataArray, setJsonDataArray] = useState([]);
-    const [currentIndex, setCurrentIndex] = useState(0);
 
+import ProductsList from "../Components/ProductsList";
+function ProductListPage() {
+
+
+    const [jsonDataArray, setJsonDataArray] = useState([]);
+    const category = categories[0].category;
     useEffect(() => {
-        const category = categories[0].category;
+
         const importedDataArray = [];
 
         const importJsonData = async () => {
@@ -19,35 +18,39 @@ function ProductListPage() {
                 try {
                     const module = await import(`../Assets/${categoryName}.json`);
                     importedDataArray.push(module.default);
+                    console.log(categoryName)
                 } catch (error) {
                     console.error(`Error importing module for ${categoryName}:`, error);
                 }
             }
 
+            // setJsonDataArray(importedDataArray);
+            // Dispatch the action to set card data in Redux store
+            // dispatch(setProductData(importedDataArray.flat()));
             // Set the imported JSON data array
             setJsonDataArray(importedDataArray);
+            console.log(jsonDataArray)
         };
 
         importJsonData();
     }, []);
 
-    const dataToRender = [];
 
+    const dataToRender = [];
     for (let i = 0; i < jsonDataArray.length; i++) {
         dataToRender.push(
-            <div key={i}>
-                <h1>{i}</h1>
+
+            <div key={i} style={{padding:"2%"}} >
+                {/*<h1 style={{textAlign:"center"}}>{category.categoryName[i]}</h1><br/><br/>*/}
                 <ProductsList jsonData={jsonDataArray[i]} />
+                <div className="horizontal-line"></div>
             </div>
         )
     }
+
     return (
-        <div className="App">
-            <div>
-                {dataToRender}
-            </div>
-            {/*<ProductsList cardData={cardData1} cardSet="cardSet1"/><br/><br/>*/}
-            {/*<ProductsList cardData={cardData2} cardSet="cardSet2"/><br/><br/>*/}
+        <div style={{textAlign:"center"}}>
+            {dataToRender}
         </div>
     );
 }
