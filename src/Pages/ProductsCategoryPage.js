@@ -1,8 +1,9 @@
+import ProductsList from "../Components/ProductsList";
 
 function ProductsCategoryPage() {
     return (
         <div className="App">
-           <h1>HOME PAGE</h1>
+            {/*<ProductsList />*/}
         </div>
     );
 }
