@@ -1,63 +1,72 @@
-import {items} from "../Assets/HeaderData";
-import { MenuOutlined } from '@ant-design/icons';
-import {Menu,Drawer} from "antd";
-import {useState} from "react";
-import useBreakpoint from "antd/es/grid/hooks/useBreakpoint"
+import "../App.css"
+import logo from "../Images/Logo/logo512.png"
+import React, { useState } from 'react';
+import { Menu, Layout, Row, Col } from 'antd';
+import {
+    HomeOutlined,
+    AppstoreOutlined,
+    MailOutlined,
+    MenuOutlined,
+    InfoCircleOutlined
+} from '@ant-design/icons';
 import {Link} from "react-router-dom";
-import {Header} from "antd/es/layout/layout";
-import MenuItem from "antd/es/menu/MenuItem";
 
+
+const { Header, Content } = Layout;
 const HeaderMenu = () => {
-    const screens = useBreakpoint();
-    const isMobile = !screens.md;
-    const [modalVisible, setModalVisible] = useState(false);
+    const [menuVisible, setMenuVisible] = useState(false);
 
-    const toggleModal = () => {
-        setModalVisible(!modalVisible);
+    const toggleMenu = () => {
+        setMenuVisible(!menuVisible);
     };
+
     return (
-        <>
-            {!isMobile ? (
-
-                <Header>
-                    <Menu
-                        theme="dark"
-                        mode="horizontal"
-                        defaultSelectedKeys={['1']}
-                        className="header-menu"
-                    >
-                        {items.map((item) => (
-                            <Menu.Item key={item.key}>
-                                <Link to={item.url}>{item.label}</Link>
-                            </Menu.Item>
-                        ))}
+        <Layout>
+            <Header className="site-header">
+                <Row  align="middle">
+                    <Col xs={12} sm={6}>
+                        <div className="logo">
+                            <img src={logo} alt="logo" height="30px" width="30px"/>
+                            <span>Valarpirai</span>
+                        </div>
+                    </Col>
+                    <Col xs={12} sm={0}>
+                        <MenuOutlined style={{float: "right", marginLeft:"120px"}} className="burger-icon" onClick={toggleMenu} />
+                    </Col>
+                    <Col xs={0} sm={18} >
+                        <div>
+                            <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['0']} >
+                                <Menu.Item key="1" icon={<HomeOutlined />}>
+                                    <Link to="/">Home</Link>
+                                </Menu.Item>
+                                <Menu.Item key="2" icon={<InfoCircleOutlined/>}>
+                                    <Link to="/about">About</Link>
+                                </Menu.Item>
+                                <Menu.Item key="3" icon={<MailOutlined />}>
+                                    <Link to="/contact">Contact</Link>
+                                </Menu.Item>
+                            </Menu>
+                        </div>
+                    </Col>
+                </Row>
+            </Header>
+            {menuVisible && (
+                <Content className="mobile-menu">
+                    <Menu theme="dark" mode="vertical" defaultSelectedKeys={['1']}>
+                        <Menu.Item key="1" icon={<HomeOutlined />}>
+                            Home
+                        </Menu.Item>
+                        <Menu.Item key="2" icon={<AppstoreOutlined />}>
+                            Products
+                        </Menu.Item>
+                        <Menu.Item key="3" icon={<MailOutlined />}>
+                            Contact
+                        </Menu.Item>
                     </Menu>
-                </Header>
-
-            ) : (
-                <MenuOutlined className="burger-menu" onClick={toggleModal} />
+                </Content>
             )}
-
-            <Drawer
-                title="Menu"
-                open={modalVisible}
-                onClose={toggleModal}
-                placement = "right"
-                footer={null}
-            >
-                <Menu
-                    theme="dark"
-                    mode="vertical"
-                    className="header-menu"
-                    onClick={toggleModal}
-                >
-                    {items.map((item) => (
-                        <Menu.Item key={item.key}>{item.label}</Menu.Item>
-                    ))}
-                </Menu>
-            </Drawer>
-        </>
-    )
+        </Layout>
+    );
 }
 
 export default HeaderMenu;

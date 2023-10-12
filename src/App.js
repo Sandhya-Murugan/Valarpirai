@@ -5,6 +5,8 @@ import HomePage from "./Pages/HomePage";
 import HeaderMenu from "./Components/Header";
 import Footer from "./Components/Footer";
 import {useDispatch} from "react-redux";
+import AboutPage from "./Pages/AboutPage";
+import ContactPage from "./Pages/ContactPage";
 
 function App() {
     const dispatch = useDispatch();
@@ -15,8 +17,10 @@ function App() {
         <div>
             <Routes>
                 <Route exact path='/' element={<HomePage/>}></Route>
+                <Route path='/about' element={<AboutPage/>}></Route>
+                <Route path='/contact' element={<ContactPage/>}></Route>
                 {/*<Route path="/productDetails" element={<CardDetails />}></Route>*/}
-                <Route path="/productDetails" element={<ProductDetail />} />
+                {/*<Route path="/productDetails" element={<ProductDetail />} />*/}
             </Routes>
         </div>
         <Footer />

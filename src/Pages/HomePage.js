@@ -6,22 +6,23 @@ import {Content, Header} from "antd/es/layout/layout";
 import SearchBar from "../Components/SearchBar";
 import OfferZone from "../Components/OfferZone";
 import {OfferZoneData} from "../Assets/OfferZoneData";
-import {Button, Card} from "antd";
-import {Link} from "react-router-dom";
 
 const HomePage = () => {
-    const screens = useBreakpoint();
-    const isMobile = !screens.md;
+    // To differentiate desktop and mobile view
+    // const screens = useBreakpoint();
+    // const isMobile = !screens.md;
     return (
         <div>
             <div>
-                <SearchBar />
+                {/*To be implemented in future*/}
+                {/*<SearchBar />*/}
                 <OfferZone data = {OfferZoneData} /><br/>
             </div>
 
             <Content>
-                {isMobile ? < ProductsCategoryPage /> : <ProductsListPage />}
-                {/*console.log("product List called")*/}
+                {/*To differentiate home page component based on desktop and mobile view*/}
+                {/*{isMobile ? < ProductsCategoryPage /> : <ProductsListPage />}*/}
+                <ProductsCategoryPage />
             </Content>
 
         </div>

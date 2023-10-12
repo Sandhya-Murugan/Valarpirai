@@ -59,7 +59,7 @@ const MyCards = ({jsonData}) => {
     const dispatch = useDispatch();
     const handleCardClick = (card) => {
         dispatch(selectProductCard(card));
-        // window.location.href='/productDetails'
+        window.location.href='/productDetails'
         // You can also navigate to the ProductDetails page programmatically here
     }
 
@@ -71,7 +71,7 @@ const MyCards = ({jsonData}) => {
                     const discountedPrice = card.actualPrice - discountPrice;
                     return (
                         <Col key={id} xs={23} sm={20} md={22} lg={22}>
-                            <Link to={`/productDetails`}>
+                            {/*<Link to={`/productDetails`}/>*/}
 
                                 <Card
                                     onClick={() => handleCardClick(card)}
@@ -126,7 +126,7 @@ const MyCards = ({jsonData}) => {
                                     </div>
 
                                 </Card>
-                            </Link>
+                            {/*</Link>*/}
                         </Col>
                     )
 
