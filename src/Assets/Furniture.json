@@ -1,0 +1,62 @@
+[
+  {
+    "Name": "Wooden Cot",
+    "Image": "/Images/furniture/wooden_cot.jpg"
+  },
+  {
+    "Name": "Wooden chair",
+    "Image": "/Images/furniture/wooden_chair.jpg"
+  },
+  {
+    "Name": "Wooden office table ",
+    "Image": "/Images/furniture/wooden_office_table.jpg"
+  },
+  {
+    "Name": "Wooden berow",
+    "Image": "/Images/furniture/wooden_bero.jpg"
+  },
+  {
+    "Name": "Wooden sofa",
+    "Image": "/Images/furniture/wooden_sofa.jpg"
+  },
+  {
+    "Name": "Wooden dinning table",
+    "Image": "/Images/furniture/wood_dinning_table.jpg"
+  },
+  {
+    "Name": "glass dinning table",
+    "Image": "/Images/furniture/glass_dinning_table.jpg"
+  },
+  {
+    "Name": "Plastic dinning table",
+    "Image": "/Images/furniture/plastic_dinning_table.jpg"
+  },
+  {
+    "Name": "recliner sofa",
+    "Image": "/Images/furniture/recliner_sofa.jpg"
+  },
+  {
+    "Name": "rexin sofa",
+    "Image": "/Images/furniture/rexin_sofa.jpg"
+  },
+  {
+    "Name": "steel cot",
+    "Image": "/Images/furniture/steel_cot.jpg"
+  },
+  {
+    "Name": "ceramic dinning table",
+    "Image": "/Images/furniture/ceramic_dinning_table.jpg"
+  },
+  {
+    "Name": "plastic chairs ",
+    "Image": "/Images/furniture/plastic_chairs.jpg"
+  },
+  {
+    "Name": "steel berow",
+    "Image": "/Images/furniture/steel_berow.jpg"
+  },
+  {
+    "Name": "steel sofa",
+    "Image": "/Images/furniture/steel_sofa.jpg"
+  }
+]

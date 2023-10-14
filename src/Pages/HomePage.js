@@ -6,6 +6,9 @@ import {Content, Header} from "antd/es/layout/layout";
 import SearchBar from "../Components/SearchBar";
 import OfferZone from "../Components/OfferZone";
 import {OfferZoneData} from "../Assets/OfferZoneData";
+import ScrollToTop from "../Components/ScrollToTop";
+import ProductsList from "../Components/ProductsList";
+import HeaderMenu from "../Components/Header";
 
 const HomePage = () => {
     // To differentiate desktop and mobile view
@@ -16,6 +19,7 @@ const HomePage = () => {
             <div>
                 {/*To be implemented in future*/}
                 {/*<SearchBar />*/}
+                <HeaderMenu /><br/><br/><br/><br/><br/>
                 <OfferZone data = {OfferZoneData} /><br/>
             </div>
 
@@ -24,7 +28,7 @@ const HomePage = () => {
                 {/*{isMobile ? < ProductsCategoryPage /> : <ProductsListPage />}*/}
                 <ProductsCategoryPage />
             </Content>
-
+            <ScrollToTop />
         </div>
     );
 };

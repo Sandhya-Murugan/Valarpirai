@@ -1,32 +1,122 @@
 [
   {
     "CategoryName": "Mobile Phones",
-    "CategoryImage": "/Images/category_list/mobile_phone",
+    "CategoryImage": "/Images/category_list/mobile_phone.jpg",
+    "CategoryBrandsAvailableBasePath": "/Images/category_list/Logo/mobile_phone",
+    "CategoryBrandsAvailable": ["oppo.jpeg","samsung.jpeg", "vivo.jpeg","oneplus.jpeg", "nokia.jpeg", "techno.jpeg", "realme.jpeg", "redmi.jpeg", "lava.jpeg","motorola.jpeg"]
+  },
+  {
+    "CategoryName": "Home Theatre",
+    "CategoryImage": "/Images/category_list/home_theatre.jpg",
+    "CategoryBrandsAvailableBasePath": "/Images/category_list/Logo/HT_SB",
+    "CategoryBrandsAvailable": ["impex.jpg","lg.jpg","philips.jpg","samsung.jpeg","zebronics.jpg"]
+  },
+  {
+    "CategoryName": "Air Conditioner",
+    "CategoryImage": "/Images/category_list/ac.jpg",
+    "CategoryBrandsAvailableBasePath": "/Images/category_list/Logo/ac",
+    "CategoryBrandsAvailable": ["blue_star.jpg","haire.jpg","lg.jpg","lloyd.jpg","samsung.jpeg","voltas.jpg"]
+  },
+  {
+    "CategoryName": "Chimney",
+    "CategoryImage": "/Images/category_list/chimney.jpg",
+    "CategoryBrandsAvailableBasePath": "/Images/category_list/Logo/chimney",
+    "CategoryBrandsAvailable": ["butterfly.jpg","faber.jpg","preethi.jpg"]
+  },
+  {
+    "CategoryName": "Fridge",
+    "CategoryImage": "/Images/category_list/fridge.jpg",
+    "CategoryBrandsAvailableBasePath": "/Images/category_list/Logo/Fridge_WM_MO_OTG",
+    "CategoryBrandsAvailable": ["bosch.jpg","goorej.jpg","haire.jpg","ifb.jpg","kelvinator.jpg","lg.jpg","samsung.jpeg","voltas.jpg","whirlpool.jpg"]
+  },
+  {
+    "CategoryName": "LED Tv",
+    "CategoryImage": "/Images/category_list/led_tv.jpg",
+    "CategoryBrandsAvailableBasePath": "/Images/category_list/Logo/led_tv",
+    "CategoryBrandsAvailable": ["haire.jpg","intex.jpg","lg.jpg","oneplus.jpeg","realme.jpeg","redmi.jpeg","samsung.jpeg","sony.jpg","vu.jpg"]
+  },
+  {
+    "CategoryName": "Microwave Oven",
+    "CategoryImage": "/Images/category_list/microwave_oven.jpg",
+    "CategoryBrandsAvailableBasePath": "/Images/category_list/Logo/Fridge_WM_MO_OTG",
+    "CategoryBrandsAvailable": ["bosch.jpg","goorej.jpg","haire.jpg","ifb.jpg","kelvinator.jpg","lg.jpg","samsung.jpeg","voltas.jpg","whirlpool.jpg"]
+  },
+  {
+    "CategoryName": "RO Purifier",
+    "CategoryImage": "/Images/category_list/ro_purifier.jpg",
+    "CategoryBrandsAvailableBasePath": "/Images/category_list/Logo/ro_purifier",
+    "CategoryBrandsAvailable": ["blue_star.jpg","faber.jpg","kent.jpg","lg.jpg","aquaguard.jpg"]
+  },
+  {
+    "CategoryName": "Sound Bars",
+    "CategoryImage": "/Images/category_list/sound_bars.jpg",
+    "CategoryBrandsAvailableBasePath": "/Images/category_list/Logo/HT_SB",
+    "CategoryBrandsAvailable": ["impex.jpg", "lg.jpg", "philips.jpg", "samsung.jpeg", "zebronics.jpg"]
+  },
+  {
+    "CategoryName": "Washing Machine",
+    "CategoryImage": "/Images/category_list/washing_machine.jpg",
+    "CategoryBrandsAvailableBasePath": "/Images/category_list/Logo/Fridge_WM_MO_OTG",
+    "CategoryBrandsAvailable": ["bosch.jpg","goorej.jpg","haire.jpg","ifb.jpg","kelvinator.jpg","lg.jpg","samsung.jpeg","voltas.jpg","whirlpool.jpg"]
+  },
+  {
+    "CategoryName": "Mixie",
+    "CategoryImage": "/Images/category_list/mixie.jpg",
     "CategoryBrandsAvailable": ["Samsung", "Vivo", "Oppo"]
   },
   {
-    "CategoryName": "Mobile Phones",
-    "CategoryImage": "/Images/category_list/mobile_phone",
+    "CategoryName": "non stick",
+    "CategoryImage": "/Images/category_list/non_stick.jpg",
     "CategoryBrandsAvailable": ["Samsung", "Vivo", "Oppo"]
   },
   {
-    "CategoryName": "Mobile Phones",
-    "CategoryImage": "/Images/category_list/mobile_phone",
+    "CategoryName": "cooker",
+    "CategoryImage": "/Images/category_list/cooker.jpg",
     "CategoryBrandsAvailable": ["Samsung", "Vivo", "Oppo"]
   },
   {
-    "CategoryName": "Mobile Phones",
-    "CategoryImage": "/Images/category_list/mobile_phone",
+    "CategoryName": "iron box",
+    "CategoryImage": "/Images/category_list/iron_box.jpg",
     "CategoryBrandsAvailable": ["Samsung", "Vivo", "Oppo"]
   },
   {
-    "CategoryName": "Mobile Phones",
-    "CategoryImage": "/Images/category_list/mobile_phone",
+    "CategoryName": "gas stove",
+    "CategoryImage": "/Images/category_list/gas_stove.jpg",
     "CategoryBrandsAvailable": ["Samsung", "Vivo", "Oppo"]
   },
   {
-    "CategoryName": "Mobile Phones",
-    "CategoryImage": "/Images/category_list/mobile_phone",
+    "CategoryName": "grinder",
+    "CategoryImage": "/Images/category_list/grinder.jpg",
+    "CategoryBrandsAvailable": ["Samsung", "Vivo", "Oppo"]
+  },
+  {
+    "CategoryName": "Flask",
+    "CategoryImage": "/Images/category_list/water_flask.jpg",
+    "CategoryBrandsAvailable": ["Samsung", "Vivo", "Oppo"]
+  },
+  {
+    "CategoryName": "Bed Mattress",
+    "CategoryImage": "/Images/category_list/bed_mattress.jpg",
+    "CategoryBrandsAvailable": ["Samsung", "Vivo", "Oppo"]
+  },
+  {
+    "CategoryName": "Table fan",
+    "CategoryImage": "/Images/category_list/table_fan.jpg",
+    "CategoryBrandsAvailable": ["Samsung", "Vivo", "Oppo"]
+  },
+  {
+    "CategoryName": "ceiling fan",
+    "CategoryImage": "/Images/category_list/ceiling_fan.jpg",
+    "CategoryBrandsAvailable": ["Samsung", "Vivo", "Oppo"]
+  },
+  {
+    "CategoryName": "pedastal fan",
+    "CategoryImage": "/Images/category_list/pedastal_fan.jpg",
+    "CategoryBrandsAvailable": ["Samsung", "Vivo", "Oppo"]
+  },
+  {
+    "CategoryName": "wall fan",
+    "CategoryImage": "/Images/category_list/wall_fans.jpg",
     "CategoryBrandsAvailable": ["Samsung", "Vivo", "Oppo"]
   }
 ]

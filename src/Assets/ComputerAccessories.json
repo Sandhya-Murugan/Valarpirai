@@ -1,0 +1,47 @@
+[
+  {
+    "Name": "keyboard",
+    "Image": "/Images/computer_accessories/keyboard.jpg"
+  },
+  {
+    "Name": "mouse",
+    "Image": "/Images/computer_accessories/mouse.jpg"
+  },
+  {
+    "Name": "laptop charger",
+    "Image": "/Images/computer_accessories/laptop_charger.jpg"
+  },
+  {
+    "Name": "mouse pads",
+    "Image": "/Images/computer_accessories/mouse_pads.jpg"
+  },
+  {
+    "Name": "multiport usb",
+    "Image": "/Images/computer_accessories/multiport_usb.jpg"
+  },
+  {
+    "Name": "pc speakers",
+    "Image": "/Images/computer_accessories/pc_speakers.jpg"
+  },
+  {
+    "Name": "Aux cable",
+    "Image": "/Images/computer_accessories/aux_cable.jpg"
+  },
+  {
+    "Name": "av cables",
+    "Image": "/Images/computer_accessories/av_cables.jpg"
+  },
+  {
+    "Name": "hdmi cable",
+    "Image": "/Images/computer_accessories/hdmi_cable.jpg"
+  },
+  {
+    "Name": "hdmi to vga cable",
+    "Image": "/Images/computer_accessories/hdmi_vga_cable.jpg"
+  },
+
+  {
+    "Name": "power cables",
+    "Image": "/Images/computer_accessories/power_cables.jpg"
+  }
+]

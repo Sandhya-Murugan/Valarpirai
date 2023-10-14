@@ -1,28 +1,77 @@
 import "../App.css"
 import logo from "../Images/Logo/logo512.png"
-import React, { useState } from 'react';
-import { Menu, Layout, Row, Col } from 'antd';
+import React, {useEffect, useState} from 'react';
+import {Menu, Layout, Row, Col, Modal, Drawer, Alert} from 'antd';
 import {
     HomeOutlined,
     AppstoreOutlined,
     MailOutlined,
     MenuOutlined,
-    InfoCircleOutlined
+    InfoCircleOutlined, CloseOutlined
 } from '@ant-design/icons';
 import {Link} from "react-router-dom";
+import MenuItem from "antd/es/menu/MenuItem";
 
 
 const { Header, Content } = Layout;
+
+const  items=[
+
+    {
+        label: "Home",
+        key: "1",
+        url:'/'
+    },
+    {
+        label: "About",
+        key: "2",
+        url:'/about'
+    },
+    {
+        label: "Products",
+        key: "3",
+        url:'#product'
+    },
+    {
+        label: "Furniture",
+        key: "4",
+        url:'#furniture'
+    },
+    {
+        label: "Accessories",
+        key: "5",
+        url:'#mobile_accessories'
+    }
+]
 const HeaderMenu = () => {
     const [menuVisible, setMenuVisible] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
+    const [openMenu, setOpenMenu] = useState(false);
+
+    const handleScroll = () => {
+        if (window.scrollY > 10) {
+            setScrolled(true);
+        } else {
+            setScrolled(false);
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     const toggleMenu = () => {
+        setOpenMenu(true);
         setMenuVisible(!menuVisible);
     };
 
     return (
+        <div >
         <Layout>
-            <Header className="site-header">
+            <Header className="header" style={{ width:"100%", backgroundColor:"black"}}>
                 <Row  align="middle">
                     <Col xs={12} sm={6}>
                         <div className="logo">
@@ -33,18 +82,14 @@ const HeaderMenu = () => {
                     <Col xs={12} sm={0}>
                         <MenuOutlined style={{float: "right", marginLeft:"120px"}} className="burger-icon" onClick={toggleMenu} />
                     </Col>
-                    <Col xs={0} sm={18} >
-                        <div>
-                            <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['0']} >
-                                <Menu.Item key="1" icon={<HomeOutlined />}>
-                                    <Link to="/">Home</Link>
-                                </Menu.Item>
-                                <Menu.Item key="2" icon={<InfoCircleOutlined/>}>
-                                    <Link to="/about">About</Link>
-                                </Menu.Item>
-                                <Menu.Item key="3" icon={<MailOutlined />}>
-                                    <Link to="/contact">Contact</Link>
-                                </Menu.Item>
+                    <Col xs={0} sm={18}>
+                        <div style={{margin:"50px"}}>
+                            <Menu style={{background:"black"}} mode="horizontal" defaultSelectedKeys={['0']} >
+                                {items.map(item => (
+                                    <Menu.Item  key={item.key} style={{color:"white"}}>
+                                        <a  href={item.url} style={{ background: "transparent", outline: "none" }}>{item.label} </a>
+                                    </Menu.Item>
+                                ))}
                             </Menu>
                         </div>
                     </Col>
@@ -52,20 +97,27 @@ const HeaderMenu = () => {
             </Header>
             {menuVisible && (
                 <Content className="mobile-menu">
-                    <Menu theme="dark" mode="vertical" defaultSelectedKeys={['1']}>
-                        <Menu.Item key="1" icon={<HomeOutlined />}>
-                            Home
-                        </Menu.Item>
-                        <Menu.Item key="2" icon={<AppstoreOutlined />}>
-                            Products
-                        </Menu.Item>
-                        <Menu.Item key="3" icon={<MailOutlined />}>
-                            Contact
-                        </Menu.Item>
-                    </Menu>
+                    <Drawer width="200px" style={{backgroundColor:"black"}} open={openMenu} onClose={() => {
+                        setOpenMenu(false);
+                    }}  closeIcon={<CloseOutlined style={{ color: "white"}} />} >
+                        <Menu className = "NavbarMenu"
+                              style={{backgroundColor:"#212121", height:"50%", borderRadius:"10%"}}>
+
+                            {items.map(item => (
+                                <Menu.Item key={item.key} style={{color:"white"}}>
+                                    <a onClick={() => {setOpenMenu(false);}}
+                                        href={item.url}>{item.label}
+                                    </a>
+                                </Menu.Item>
+                            ))}
+
+                        </Menu>
+                    </Drawer>
+
                 </Content>
             )}
         </Layout>
+        </div>
     );
 }
 

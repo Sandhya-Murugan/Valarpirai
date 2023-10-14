@@ -9,16 +9,14 @@ import AboutPage from "./Pages/AboutPage";
 import ContactPage from "./Pages/ContactPage";
 
 function App() {
-    const dispatch = useDispatch();
   return (
     <div className="App">
-        <HeaderMenu />
-        {/*<HomePage />*/}
         <div>
             <Routes>
                 <Route exact path='/' element={<HomePage/>}></Route>
                 <Route path='/about' element={<AboutPage/>}></Route>
                 <Route path='/contact' element={<ContactPage/>}></Route>
+                {/*<Route path='#product' element={<HomePage/>}></Route>*/}
                 {/*<Route path="/productDetails" element={<CardDetails />}></Route>*/}
                 {/*<Route path="/productDetails" element={<ProductDetail />} />*/}
             </Routes>

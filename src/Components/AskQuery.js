@@ -13,7 +13,7 @@ const AskQuery = ({title, description, imagePath}) => {
     };
     return (
         <div>
-            <Button
+            <WhatsAppOutlined
                 style={{color:"white", backgroundColor:"green"}}
                 onClick={() => handleWhatsAppShare(title, description)}
                 onMouseEnter={(e) => {
@@ -24,7 +24,7 @@ const AskQuery = ({title, description, imagePath}) => {
                 }}
             >
                 Whatsapp <WhatsAppOutlined />
-            </Button>
+            </WhatsAppOutlined>
         </div>
     );
 };

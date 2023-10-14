@@ -1,0 +1,30 @@
+[
+  {
+    "Name": "bluetooth speakers",
+    "Image": "/Images/mobile_accessories/bluetooth_speakers.jpg"
+  },
+  {
+    "Name": "cables",
+    "Image": "/Images/mobile_accessories/cables.jpg"
+  },
+  {
+    "Name": "Headphones",
+    "Image": "/Images/mobile_accessories/headphones.jpg"
+  },
+  {
+    "Name": "mobile case",
+    "Image": "/Images/mobile_accessories/mobile_case.jpg"
+  },
+  {
+    "Name": "mobile charger",
+    "Image": "/Images/mobile_accessories/mobile_charger.jpg"
+  },
+  {
+    "Name": "smart watch",
+    "Image": "/Images/mobile_accessories/smart_watch.jpg"
+  },
+  {
+    "Name": "tempered glass",
+    "Image": "/Images/mobile_accessories/tempered_glass.jpg"
+  }
+]
