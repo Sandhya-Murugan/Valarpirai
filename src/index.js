@@ -11,14 +11,14 @@ import config from "./Config";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  // <React.StrictMode>
-    <Provider store={store}>
+  <React.StrictMode>
+     {/*<Provider store={store}>*/}
       <BrowserRouter>
-          <PersistGate loading={null} persistor={persistor}>
+          {/*<PersistGate loading={null} persistor={persistor}>*/}
             <App />
-          </PersistGate>
+          {/*</PersistGate>*/}
       </BrowserRouter>
-    </Provider>
+     {/*</Provider>*/}
   // </React.StrictMode>
 );
 reportWebVitals();
