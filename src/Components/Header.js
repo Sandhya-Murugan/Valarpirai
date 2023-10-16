@@ -25,7 +25,7 @@ const  items=[
     {
         label: "About",
         key: "2",
-        url:'/about'
+        url:'about'
     },
     {
         label: "Products",
