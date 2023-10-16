@@ -62,61 +62,73 @@
   {
     "CategoryName": "Mixie",
     "CategoryImage": "/Images/category_list/mixie.jpg",
-    "CategoryBrandsAvailable": ["Samsung", "Vivo", "Oppo"]
+    "CategoryBrandsAvailableBasePath": "/Images/category_list/Logo/home_appliances",
+    "CategoryBrandsAvailable": ["butterfly.jpg","havells.jpg","laxmi.jpg","preethi.jpg","prestige.jpg","sowbagya.jpg","v-guard.jpg","vidiem.jpg","wonder_chef.jpg"]
   },
   {
     "CategoryName": "non stick",
     "CategoryImage": "/Images/category_list/non_stick.jpg",
-    "CategoryBrandsAvailable": ["Samsung", "Vivo", "Oppo"]
+    "CategoryBrandsAvailableBasePath": "/Images/category_list/Logo/home_appliances",
+    "CategoryBrandsAvailable": ["butterfly.jpg","havells.jpg","laxmi.jpg","preethi.jpg","prestige.jpg","sowbagya.jpg","v-guard.jpg","vidiem.jpg","wonder_chef.jpg"]
   },
   {
     "CategoryName": "cooker",
     "CategoryImage": "/Images/category_list/cooker.jpg",
-    "CategoryBrandsAvailable": ["Samsung", "Vivo", "Oppo"]
+    "CategoryBrandsAvailableBasePath": "/Images/category_list/Logo/home_appliances",
+    "CategoryBrandsAvailable": ["butterfly.jpg","havells.jpg","laxmi.jpg","preethi.jpg","prestige.jpg","sowbagya.jpg","v-guard.jpg","vidiem.jpg","wonder_chef.jpg"]
   },
   {
     "CategoryName": "iron box",
     "CategoryImage": "/Images/category_list/iron_box.jpg",
-    "CategoryBrandsAvailable": ["Samsung", "Vivo", "Oppo"]
+    "CategoryBrandsAvailableBasePath": "/Images/category_list/Logo/home_appliances",
+    "CategoryBrandsAvailable": ["butterfly.jpg","havells.jpg","laxmi.jpg","preethi.jpg","prestige.jpg","sowbagya.jpg","v-guard.jpg","vidiem.jpg","wonder_chef.jpg"]
   },
   {
     "CategoryName": "gas stove",
     "CategoryImage": "/Images/category_list/gas_stove.jpg",
-    "CategoryBrandsAvailable": ["Samsung", "Vivo", "Oppo"]
+    "CategoryBrandsAvailableBasePath": "/Images/category_list/Logo/home_appliances",
+    "CategoryBrandsAvailable": ["butterfly.jpg","havells.jpg","laxmi.jpg","preethi.jpg","prestige.jpg","sowbagya.jpg","v-guard.jpg","vidiem.jpg","wonder_chef.jpg"]
   },
   {
     "CategoryName": "grinder",
     "CategoryImage": "/Images/category_list/grinder.jpg",
-    "CategoryBrandsAvailable": ["Samsung", "Vivo", "Oppo"]
+    "CategoryBrandsAvailableBasePath": "/Images/category_list/Logo/home_appliances",
+    "CategoryBrandsAvailable": ["butterfly.jpg","havells.jpg","laxmi.jpg","preethi.jpg","prestige.jpg","sowbagya.jpg","v-guard.jpg","vidiem.jpg","wonder_chef.jpg"]
   },
   {
     "CategoryName": "Flask",
     "CategoryImage": "/Images/category_list/water_flask.jpg",
-    "CategoryBrandsAvailable": ["Samsung", "Vivo", "Oppo"]
+    "CategoryBrandsAvailableBasePath": "/Images/category_list/Logo/home_appliances",
+    "CategoryBrandsAvailable": ["butterfly.jpg","havells.jpg","laxmi.jpg","preethi.jpg","prestige.jpg","sowbagya.jpg","v-guard.jpg","vidiem.jpg","wonder_chef.jpg"]
   },
   {
     "CategoryName": "Bed Mattress",
     "CategoryImage": "/Images/category_list/bed_mattress.jpg",
-    "CategoryBrandsAvailable": ["Samsung", "Vivo", "Oppo"]
+    "CategoryBrandsAvailableBasePath": "/Images/category_list/Logo/bed_matters",
+    "CategoryBrandsAvailable": ["duroflex.jpg","mahendra.jpg","peps.jpg","repose.jpg"]
   },
   {
     "CategoryName": "Table fan",
     "CategoryImage": "/Images/category_list/table_fan.jpg",
-    "CategoryBrandsAvailable": ["Samsung", "Vivo", "Oppo"]
+    "CategoryBrandsAvailableBasePath": "/Images/category_list/Logo/fans",
+    "CategoryBrandsAvailable": ["almonard.jpg","atomberg.jpg","btm.jpg","crompton.jpg","luker.jpg","orient.jpg","usha.jpg"]
   },
   {
     "CategoryName": "ceiling fan",
     "CategoryImage": "/Images/category_list/ceiling_fan.jpg",
-    "CategoryBrandsAvailable": ["Samsung", "Vivo", "Oppo"]
+    "CategoryBrandsAvailableBasePath": "/Images/category_list/Logo/fans",
+    "CategoryBrandsAvailable": ["almonard.jpg","atomberg.jpg","btm.jpg","crompton.jpg","luker.jpg","orient.jpg","usha.jpg"]
   },
   {
     "CategoryName": "pedastal fan",
     "CategoryImage": "/Images/category_list/pedastal_fan.jpg",
-    "CategoryBrandsAvailable": ["Samsung", "Vivo", "Oppo"]
+    "CategoryBrandsAvailableBasePath": "/Images/category_list/Logo/fans",
+    "CategoryBrandsAvailable": ["almonard.jpg","atomberg.jpg","btm.jpg","crompton.jpg","luker.jpg","orient.jpg","usha.jpg"]
   },
   {
     "CategoryName": "wall fan",
     "CategoryImage": "/Images/category_list/wall_fans.jpg",
-    "CategoryBrandsAvailable": ["Samsung", "Vivo", "Oppo"]
+    "CategoryBrandsAvailableBasePath": "/Images/category_list/Logo/fans",
+    "CategoryBrandsAvailable": ["almonard.jpg","atomberg.jpg","btm.jpg","crompton.jpg","luker.jpg","orient.jpg","usha.jpg"]
   }
 ]

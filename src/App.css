@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,400&family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&family=Montserrat:ital,wght@0,400;0,500;1,400&family=Roboto+Mono&display=swap');
+
 .App{
   margin: auto;
 
@@ -7,7 +9,17 @@
 body{
   margin: auto;
   background-color: #eeeeee;
-  font-family: Montserrat;
+  font-family: 'Fira Sans', sans-serif;
+  letter-spacing: 2px;
+}
+.scroll-to-top{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color:red;
+  color:white;
+  border:none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9)
 }
 /* Products Details Page */
 /*.product-details-container {*/
@@ -132,6 +144,7 @@ body{
   width:100%;
   z-index: 10;
   height: 10%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9)
 }
 
 .logo {
@@ -163,7 +176,7 @@ body{
   border: none;
   background: #001529;
   width: 700px;
-  margin-left: 100%;
+  margin-left: 90%;
 }
 
 /* Style the menu items as needed */
@@ -189,7 +202,7 @@ body{
   color: white;
   padding: 2%;
   /*width:50%;*/
-  box-shadow: 0 0 10px rgba(244, 252, 250, 0.95);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9)
   /*border-radius: 2%*/
 }
 /*OfferZone*/
@@ -294,6 +307,7 @@ a:active /* active state */
   .products_word_home_page{
     font-size: 20px;
     padding: 10%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9)
   }
   .title-font{
     font-size: 15px;
@@ -329,6 +343,10 @@ a:active /* active state */
   .brand-logo-hp{
     width:95%;
     height:50%;
+  }
+  .scroll-to-top{
+    bottom:8%;
+
   }
 }
 

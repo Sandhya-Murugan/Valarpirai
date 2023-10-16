@@ -9,16 +9,12 @@ const ScrollToTop = () => {
 
     return (
         <Button
-            type="primary"
+            // type="primary"
+            className="scroll-to-top"
             shape="circle"
             size="large"
             icon={<UpOutlined />}
             onClick={handleScrollToTop}
-            style={{
-                position: 'fixed',
-                bottom: '20px',
-                right: '20px',
-            }}
         />
     );
 };

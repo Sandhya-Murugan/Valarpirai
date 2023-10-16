@@ -14,7 +14,7 @@ const BrandsAvailableModal = ({data1,data2}) => {
     };
     return (
         <div>
-            <Button className="brands-button" style={{backgroundColor:"red", color:"white"}} onClick={showModal}>
+            <Button className="brands-button" style={{backgroundColor:"red", color:"white", letterSpacing:"2px"}} onClick={showModal}>
                 Brands Available
             </Button>
             <Modal

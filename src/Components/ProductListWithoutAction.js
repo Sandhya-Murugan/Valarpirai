@@ -39,7 +39,7 @@ const ProductListWithoutAction = ({jsonData}) => {
                             >
 
                                 <div className="title-font" style={{textAlign:"center"}}>
-                                    <h4 style={{textTransform: "uppercase"}}>{card.Name}</h4>
+                                    <h4 style={{textTransform: "capitalize"}}>{card.Name}</h4>
                                 </div>
 
                             </Card>

@@ -183,7 +183,7 @@ const MyCards = ({jsonData}) => {
                                     className="product-name"
                                     style={{textAlign:"center"}}
                                     >
-                                    <h4 style={{textTransform: "uppercase"}}>{card.CategoryName}</h4>
+                                    <h4 style={{textTransform: "capitalize"}}>{card.CategoryName}</h4>
                                 </div>
                                 <div style={{textAlign:"center"}}>
                                     <BrandsAvailableModal data1 = {card.CategoryBrandsAvailableBasePath}

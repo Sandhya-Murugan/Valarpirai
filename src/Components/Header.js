@@ -80,7 +80,7 @@ const HeaderMenu = () => {
                         </div>
                     </Col>
                     <Col xs={12} sm={0}>
-                        <MenuOutlined style={{float: "right", marginLeft:"120px"}} className="burger-icon" onClick={toggleMenu} />
+                        <MenuOutlined style={{float: "right", marginLeft:"100px"}} className="burger-icon" onClick={toggleMenu} />
                     </Col>
                     <Col xs={0} sm={18}>
                         <div style={{margin:"50px"}}>
